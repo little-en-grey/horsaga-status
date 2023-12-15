@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+
+/*PC・タブレット・スマホ(全端末)共通設定
+---------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	-webkit-text-size-adjust: none;
+	color: #666;	/*全体の文字色*/
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 9px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #FFFFFF;	/*背景色*/
+	margin: 0 auto 60px;
+	max-width: 90%;
+}
+
+h3.title {　/* 小画面用 */
+  line-height: 1.2;
+  border-bottom: solid 1px #999;
+  margin-bottom: 8px;
+	font-size: 2vw;
+	text-align: center;
+}
+
+dt{
+  float: left;
+}
+
+dd{
+  margin-left: 80px;
+}
+
+#next img {
+	min-width:25%;
+}
+
+
+/* トップ画像 */
+.flexslider{
+
+
+}
+
+
+ /* --- （参考）テーブル全体のスタイル指定 ------- */
+table {
+	background: #FFF;
+}
+
+ table th {
+ 	text-align: center;
+	background: #b0e0e6;	/*背景色*/
+ }
+
+table td {
+	vertical-align: middle;
+}
+
+
+table img {
+	width: 100%;
+}
+
+/* 画像 */
+.att_icon {
+	width: 12%;
+}
+
+tfoot {
+	 display: table-header-group;
+}
+
+/* ---------------------------------------------------- */
+
+.SearchBlock{
+ margin-bottom: 60px;
+}
+.SearchBlock_inner{
+ margin-left: auto;
+ margin-right: auto;
+}
+.SearchBlock_ttl{
+ text-align: center;
+ margin: 55px 0;
+}
+
+
+.el_searchResult{
+ text-align: center;
+ color: #0073aa;
+}
+.js_target{
+ display: none;
+}
+.js_target.js_selected{
+ display: block;
+}
+.bl_selectBlock label{
+ display: inline;
+}
+.bl_selectBlock input{
+}
+.bl_selectBlock_check label .el_checkbox{
+ position: relative;
+ top: 3px;
+ width: 14px;
+ height: 14px;
+ display: inline-block;
+ margin-right: 5px;
+ border: 1px solid #0073aa;
+}
+.bl_selectBlock_check label .el_checkbox:after{
+ content: "";
+ position: absolute;
+ top: 4px;
+ left: 4px;
+ bottom: 4px;
+ right: 4px;
+}
+input[type=checkbox]{
+  display: none;
+}
+.bl_selectBlock_check input[type=checkbox]:checked + label .el_checkbox:after{
+ background-color: #0073aa;
+}
+.el_searchResult{
+ margin-bottom: 20px;
+}
+.bl_selectBlock{
+ border: 1px solid #0073aa;
+ padding: 30px;
+ box-sizing: border-box;
+ margin-bottom: 30px;
+ letter-spacing: 0.1em;
+}
+.bl_selectBlock_wrapper_wrapper{
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ margin-bottom: 30px;
+}
+.bl_selectBlock_check label{
+ /* cursor: pointer; */
+}
+.bl_selectBlock_ttl{
+ width: 185px;
+ color: #0073aa;
+ letter-spacing: 0.1em;
+ margin-bottom: 20px;
+}
+@media screen and (max-width: 765px){
+ .bl_selectBlock_ttl{
+	 width: 100%;
+	 margin-bottom: 20px;
+ }
+}
+.bl_selectBlock_content{
+ width: calc(100% - 185px);
+}
+@media screen and (max-width: 765px){
+ .bl_selectBlock_content{
+	 width: 100%;
+ }
+}
+.bl_searchResultBlock{
+ border-top: 1px solid #bdbdbd;
+}
+.bl_searchResultBlock_item{
+ padding: 20px 0;
+ box-sizing: border-box;
+ border-bottom: 1px solid #bdbdbd;
+}
+.bl_selectBlock_check{
+ /* display: inline-block; */
+ margin-right: 25px;
+ display: inline-block;
+ margin-bottom: 20px;
+}
+.bl_selectBlock_check:last-child{
+ margin-right: 0;
+}
